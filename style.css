@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+  height: 100%;
+  background-color: #19a2ae;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: left -765px top -600px, right -745px bottom -605px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media (min-width: 450px) {
+  body {
+    background-position: left -300px top -478px, right -224px bottom -640px;
+  }
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  box-shadow: 0 15px 25px 0 rgba(45,50,72,0.2);
+  border: none;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.card header {
+  background-image: url("./images/bg-pattern-card.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card header img {
+  border: 5px solid #fff;
+  border-radius: 10rem;
+  margin: 5.5rem 6.9rem 1rem;
+}
+@media (min-width: 450px) {
+  .card header img {
+    margin: 5.5rem 7.5rem 1rem;
+  }
+}
+.card main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.card main .info {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+.card main .info h1 {
+  font-size: 18px;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+.card main .info span {
+  color: #6a6f81;
+  font-size: 18px;
+}
+.card main > span {
+  color: #6a6f81;
+  font-size: 14px;
+}
+.card footer {
+  border-top: 1px solid rgba(106,111,129,0.15);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card footer > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 1.5rem 0;
+}
+@media (min-width: 450px) {
+  .card footer > div {
+    justify-content: space-evenly;
+  }
+}
+.card footer > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card footer > div > div > span:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.card footer > div > div > span:last-of-type {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: #6a6f81;
+}
